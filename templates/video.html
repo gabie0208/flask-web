@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <style>
+    div{text-align: center; margin-top: 60px;}
+    input[type=button] {
+      background-color: #00008B;
+      border: none;
+      color: white;
+      font-size: 25px;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    </style>
+    
+<div>
+    <video  id="myVideo" width="250" height="200" style="border: 3px solid rgb(0, 0, 0);"></video>
+    <canvas id="myCanvas" width="250" height="200" style="border: 3px solid rgb(0, 0, 0);"></canvas><br>
+
+    <input type=button value="촬영" onclick="{getVideo()}" style="WIDTH: 256px; HEIGHT: 40px">
+    <input type=button value="캡쳐" onclick="{takeSnapshot()}" style="WIDTH: 256px; HEIGHT: 40px"><br><br>
+    <input type=button value="저장" onclick="{getDownload()}" style="border: 1; border-color: black; font-size: 20px; WIDTH: 153px; HEIGHT: 30px; background-color: deepskyblue;"><br>
+
+    <!-- Take snapshot every <input type=number id="myInterval"  value="3000"> milliseconds
+    <input type=button value="Auto" onclick="{takeAuto()}"> -->
+    <script src="\static\video.js"></script>
+
+</div>
